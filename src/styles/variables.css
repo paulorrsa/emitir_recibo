@@ -1,0 +1,110 @@
+:root {
+  /* Colors */
+  --primary: #18b5a8;
+  --primary-dark: #0f736a;
+  --primary-light: #1de0d0;
+  --primary-lighter: #e6faf9;
+  --secondary: #1de0d0;
+  --secondary-light: rgba(29, 224, 208, 0.1);
+  --secondary-dark: #18b5a8;
+  --success: #059669;
+  --success-dark: #065f46;
+  --success-light: #d1fae5;
+  --error: #dc2626;
+  --error-dark: #991b1b;
+  --error-light: #fee2e2;
+  --warning: #d97706;
+  --warning-dark: #92400e;
+  --warning-light: #fef3c7;
+
+  /* Background colors */
+  --background: #ffffff;
+  --background-alt: #f8fafc;
+  --background-disabled: #f1f5f9;
+
+  /* Dark mode backgrounds */
+  --background-dark: #1a1a1a;
+  --background-alt-dark: #2a2a2a;
+  --background-disabled-dark: #18b5a8;
+
+  /* Text colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #64748b;
+  --text-disabled: #18b5a8;
+
+  /* Dark mode text */
+  --text-primary-dark: #f8fafc;
+  --text-secondary-dark: #94a3b8;
+  --text-disabled-dark: #18b5a8;
+
+  /* Border colors */
+  --border-color: #e2e8f0;
+  --border-color-dark: #404040;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Transitions */
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-slower: 0.5s ease;
+
+  /* Z-index */
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;
+  --z-fixed: 100;
+}

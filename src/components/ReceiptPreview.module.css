@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Type+Machine&display=swap");
+
+.preview {
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receipt {
+  background: var(--background-alt);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.reference {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.amountInWords {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.content {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.text {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.paymentMethod {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.beneficiaryInfo {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--background);
+}
+
+.beneficiaryContact {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.signature {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  max-width: 300px;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto 0.5rem;
+}
+
+.signatureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.signatureHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.date {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 15px;
+  text-align: right;
+  align-self: flex-end;
+  width: auto;
+  font-weight: 500;
+}
+
+.name {
+  font-size: 1.1rem;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.document {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  width: 100%;
+}
+
+.validityNote {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+@media print {
+  .preview {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .receipt {
+    background: white;
+    box-shadow: none;
+    padding: 20px;
+    color: black;
+  }
+
+  .header {
+    border-bottom-color: #000;
+  }
+
+  .title,
+  .amount,
+  .text,
+  .name {
+    color: black;
+  }
+
+  .reference,
+  .amountInWords,
+  .paymentMethod,
+  .document,
+  .date,
+  .validityNote {
+    color: #444;
+  }
+
+  .beneficiaryInfo {
+    border-color: #ccc;
+    background: #f9f9f9;
+  }
+
+  .line {
+    background: #000;
+  }
+
+  .signatureContent {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .signatureHeader {
+    width: 100%;
+  }
+
+  .date {
+    text-align: right;
+    align-self: flex-end;
+    width: auto;
+    color: #000;
+  }
+
+  .name {
+    text-align: center;
+    width: 100%;
+    color: #000;
+  }
+
+  .document {
+    text-align: center;
+    width: 100%;
+    color: #666;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview {
+    padding: var(--spacing-lg);
+  }
+
+  .receipt {
+    padding: var(--spacing-xl);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .amount {
+    font-size: 1.75rem;
+  }
+
+  .text {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .receipt {
+    background-color: var(--background-dark);
+  }
+
+  .title {
+    color: var(--primary-light);
+  }
+
+  .amount {
+    color: var(--primary-light);
+    border-color: var(--primary-light);
+  }
+}

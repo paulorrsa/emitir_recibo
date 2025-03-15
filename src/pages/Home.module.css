@@ -1,0 +1,265 @@
+.home {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--space-16) 0;
+  background: linear-gradient(135deg, var(--primary-50) 0%, white 100%);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--neutral-900);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trustIndicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--neutral-600);
+  font-weight: 500;
+}
+
+.trustIcon {
+  color: var(--primary-500);
+  font-size: 1.25rem;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--primary-500);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(24, 181, 168, 0.2);
+}
+
+.ctaButton:hover {
+  background-color: var(--primary-600);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(24, 181, 168, 0.3);
+}
+
+/* How to Use Section */
+.howToUse {
+  padding: var(--space-12) 0;
+  background-color: white;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  color: var(--neutral-900);
+  font-size: 2rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.step {
+  text-align: center;
+  padding: var(--space-6);
+  background-color: var(--neutral-50);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--neutral-200);
+}
+
+.stepNumber {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-500);
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0 auto var(--space-4);
+}
+
+.stepTitle {
+  color: var(--neutral-900);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.stepDescription {
+  color: var(--neutral-600);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Why Use Section */
+.whyUse {
+  padding: var(--space-12) 0;
+  background-color: var(--neutral-50);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.feature {
+  text-align: center;
+  padding: var(--space-6);
+  background-color: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--neutral-200);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  color: var(--primary-500);
+  margin-bottom: var(--space-4);
+}
+
+.featureTitle {
+  color: var(--neutral-900);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.featureDescription {
+  color: var(--neutral-600);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .hero {
+    background: linear-gradient(
+      135deg,
+      var(--primary-900) 0%,
+      var(--neutral-900) 100%
+    );
+  }
+
+  .title {
+    color: var(--neutral-50);
+  }
+
+  .description {
+    color: var(--neutral-300);
+  }
+
+  .trustItem {
+    color: var(--neutral-300);
+  }
+
+  .howToUse {
+    background-color: var(--neutral-900);
+  }
+
+  .sectionTitle {
+    color: var(--neutral-50);
+  }
+
+  .step {
+    background-color: var(--neutral-800);
+    border-color: var(--neutral-700);
+  }
+
+  .stepTitle {
+    color: var(--neutral-50);
+  }
+
+  .stepDescription {
+    color: var(--neutral-400);
+  }
+
+  .whyUse {
+    background-color: var(--neutral-900);
+  }
+
+  .feature {
+    background-color: var(--neutral-800);
+    border-color: var(--neutral-700);
+  }
+
+  .featureTitle {
+    color: var(--neutral-50);
+  }
+
+  .featureDescription {
+    color: var(--neutral-400);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-12) 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+  }
+
+  .trustIndicators {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .howToUse,
+  .whyUse {
+    padding: var(--space-8) 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-6);
+  }
+
+  .steps,
+  .features {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .step,
+  .feature {
+    padding: var(--space-4);
+  }
+}

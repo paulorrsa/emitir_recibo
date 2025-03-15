@@ -1,0 +1,84 @@
+.badge {
+   display: inline-flex;
+   align-items: center;
+   gap: var(--spacing-xs);
+   border-radius: var(--radius-full);
+   font-weight: 500;
+   line-height: 1;
+   white-space: nowrap;
+}
+
+.icon {
+   font-size: 0.875em;
+}
+
+/* Variants */
+.primary {
+   background-color: var(--primary-light);
+   color: var(--primary);
+}
+
+.secondary {
+   background-color: var(--background-alt);
+   color: var(--text-primary);
+}
+
+.success {
+   background-color: var(--success-light);
+   color: var(--success);
+}
+
+.warning {
+   background-color: var(--warning-light);
+   color: var(--warning);
+}
+
+.error {
+   background-color: var(--error-light);
+   color: var(--error);
+}
+
+.info {
+   background-color: var(--info-light);
+   color: var(--info);
+}
+
+/* Sizes */
+.small {
+   padding: var(--spacing-xs) var(--spacing-sm);
+   font-size: 0.75rem;
+}
+
+.medium {
+   padding: var(--spacing-xs) var(--spacing-md);
+   font-size: 0.875rem;
+}
+
+.large {
+   padding: var(--spacing-sm) var(--spacing-lg);
+   font-size: 1rem;
+}
+
+/* Dot variant */
+.dot {
+   padding: 0;
+   width: 8px;
+   height: 8px;
+}
+
+.dot.small {
+   width: 6px;
+   height: 6px;
+}
+
+.dot.large {
+   width: 10px;
+   height: 10px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+   .secondary {
+      background-color: var(--background-alt-dark);
+   }
+}

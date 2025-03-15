@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "dsznajder.es7-react-js-snippets",
+    "christian-kohler.path-intellisense",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "mikestead.dotenv",
+    "eamodio.gitlens"
+  ]
+}

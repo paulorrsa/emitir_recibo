@@ -1,0 +1,175 @@
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 1rem;
+}
+
+.hero {
+   background: linear-gradient(135deg, var(--primary-color) 0%, #1d4ed8 100%);
+   color: white;
+   padding: 4rem 2rem;
+   text-align: center;
+   border-radius: 1rem;
+   margin-bottom: 4rem;
+}
+
+.heroContent {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.heroTitle {
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+.heroDescription {
+   font-size: 1.25rem;
+   opacity: 0.9;
+}
+
+.mission {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.sectionTitle {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: var(--text-color);
+}
+
+.missionText {
+   font-size: 1.25rem;
+   color: var(--text-color);
+   max-width: 800px;
+   margin: 0 auto;
+   line-height: 1.6;
+}
+
+.features {
+   margin-bottom: 4rem;
+}
+
+.featureGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.feature {
+   background: white;
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   transition: transform 0.2s ease-in-out;
+}
+
+.feature:hover {
+   transform: translateY(-5px);
+}
+
+.featureIcon {
+   font-size: 2.5rem;
+   color: var(--primary-color);
+   margin-bottom: 1rem;
+}
+
+.featureTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-bottom: 1rem;
+   color: var(--text-color);
+}
+
+.featureDescription {
+   color: var(--text-color);
+   line-height: 1.6;
+}
+
+.cta {
+   background: linear-gradient(135deg, var(--primary-color) 0%, #1d4ed8 100%);
+   color: white;
+   padding: 4rem 2rem;
+   text-align: center;
+   border-radius: 1rem;
+   margin-bottom: 4rem;
+}
+
+.ctaTitle {
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+.ctaDescription {
+   font-size: 1.25rem;
+   opacity: 0.9;
+   margin-bottom: 2rem;
+}
+
+.ctaButton {
+   display: inline-block;
+   background: white;
+   color: var(--primary-color);
+   padding: 1rem 2rem;
+   border-radius: 0.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   transition: transform 0.2s ease-in-out;
+}
+
+.ctaButton:hover {
+   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+   .hero {
+      padding: 3rem 1rem;
+   }
+
+   .heroTitle {
+      font-size: 2rem;
+   }
+
+   .heroDescription {
+      font-size: 1.1rem;
+   }
+
+   .sectionTitle {
+      font-size: 1.75rem;
+   }
+
+   .missionText {
+      font-size: 1.1rem;
+   }
+
+   .feature {
+      padding: 1.5rem;
+   }
+
+   .featureIcon {
+      font-size: 2rem;
+   }
+
+   .featureTitle {
+      font-size: 1.1rem;
+   }
+
+   .cta {
+      padding: 3rem 1rem;
+   }
+
+   .ctaTitle {
+      font-size: 1.75rem;
+   }
+
+   .ctaDescription {
+      font-size: 1.1rem;
+   }
+}

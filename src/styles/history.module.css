@@ -1,0 +1,200 @@
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 1rem;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.title {
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--text-color);
+}
+
+.newButton {
+   background: var(--primary-color);
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+   font-weight: 600;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.newButton:hover {
+   background: var(--primary-color-dark);
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 2rem;
+}
+
+.card {
+   background: white;
+   border-radius: 1rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+   transform: translateY(-5px);
+}
+
+.cardHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   background: var(--primary-color);
+   color: white;
+}
+
+.cardTitle {
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin: 0;
+}
+
+.cardActions {
+   display: flex;
+   gap: 0.5rem;
+}
+
+.actionButton {
+   background: none;
+   border: none;
+   color: white;
+   padding: 0.5rem;
+   cursor: pointer;
+   transition: opacity 0.2s ease-in-out;
+}
+
+.actionButton:hover {
+   opacity: 0.8;
+}
+
+.deleteButton {
+   color: #ef4444;
+}
+
+.cardContent {
+   padding: 1rem;
+}
+
+.cardDate {
+   font-size: 0.875rem;
+   color: var(--text-color);
+   margin-bottom: 1rem;
+}
+
+.cardPreview {
+   border: 1px solid #e5e7eb;
+   border-radius: 0.5rem;
+   padding: 1rem;
+   max-height: 300px;
+   overflow-y: auto;
+}
+
+.empty {
+   text-align: center;
+   padding: 4rem 2rem;
+   background: white;
+   border-radius: 1rem;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.emptyIcon {
+   font-size: 3rem;
+   color: var(--primary-color);
+   margin-bottom: 1rem;
+}
+
+.emptyTitle {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--text-color);
+   margin-bottom: 1rem;
+}
+
+.emptyDescription {
+   color: var(--text-color);
+   margin-bottom: 2rem;
+}
+
+.emptyButton {
+   display: inline-block;
+   background: var(--primary-color);
+   color: white;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+   font-weight: 600;
+   transition: background-color 0.2s ease-in-out;
+}
+
+.emptyButton:hover {
+   background: var(--primary-color-dark);
+}
+
+.loading {
+   text-align: center;
+   padding: 4rem;
+   font-size: 1.25rem;
+   color: var(--text-color);
+}
+
+.error {
+   text-align: center;
+   padding: 4rem;
+   color: #ef4444;
+   font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+   .header {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+   }
+
+   .title {
+      font-size: 1.75rem;
+   }
+
+   .grid {
+      grid-template-columns: 1fr;
+   }
+
+   .cardHeader {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+   }
+
+   .cardActions {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .empty {
+      padding: 2rem 1rem;
+   }
+
+   .emptyIcon {
+      font-size: 2.5rem;
+   }
+
+   .emptyTitle {
+      font-size: 1.25rem;
+   }
+}

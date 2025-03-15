@@ -1,0 +1,120 @@
+.modelsSection {
+  padding: var(--space-12) 0;
+  background-color: var(--neutral-50);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  color: var(--neutral-900);
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.modelCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-6);
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border: 1px solid var(--neutral-200);
+}
+
+.modelCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-200);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-4);
+  transition: all 0.2s ease;
+}
+
+.icon {
+  font-size: 1.75rem;
+  transition: all 0.2s ease;
+}
+
+.modelTitle {
+  color: var(--neutral-900);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.modelDescription {
+  color: var(--neutral-600);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .modelsSection {
+    background-color: var(--neutral-900);
+  }
+
+  .title {
+    color: var(--neutral-50);
+  }
+
+  .modelCard {
+    background-color: var(--neutral-800);
+    border-color: var(--neutral-700);
+  }
+
+  .modelCard:hover {
+    border-color: var(--primary-800);
+  }
+
+  .modelTitle {
+    color: var(--neutral-50);
+  }
+
+  .modelDescription {
+    color: var(--neutral-400);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modelsSection {
+    padding: var(--space-8) 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-6);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .modelCard {
+    padding: var(--space-4);
+  }
+}

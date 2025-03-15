@@ -1,0 +1,109 @@
+.card {
+   background-color: var(--background);
+   border-radius: var(--radius);
+   box-shadow: var(--shadow);
+   overflow: hidden;
+   transition: all var(--transition-normal);
+}
+
+.card.hover:hover {
+   transform: translateY(-4px);
+   box-shadow: var(--shadow-md);
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: var(--spacing-md) var(--spacing-lg);
+   border-bottom: 1px solid var(--border-color);
+}
+
+.titleContainer {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-sm);
+}
+
+.icon {
+   font-size: 1.25rem;
+   color: var(--primary);
+}
+
+.title {
+   margin: 0;
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--text-primary);
+}
+
+.headerActions {
+   display: flex;
+   align-items: center;
+   gap: var(--spacing-sm);
+}
+
+.content {
+   padding: var(--spacing-lg);
+}
+
+.footer {
+   padding: var(--spacing-md) var(--spacing-lg);
+   border-top: 1px solid var(--border-color);
+   background-color: var(--background-alt);
+}
+
+/* Variants */
+.default {
+   border: 1px solid var(--border-color);
+}
+
+.bordered {
+   border: 2px solid var(--border-color);
+}
+
+.elevated {
+   box-shadow: var(--shadow-lg);
+}
+
+.elevated.hover:hover {
+   box-shadow: var(--shadow-xl);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+   .header,
+   .content,
+   .footer {
+      padding: var(--spacing-md);
+   }
+
+   .title {
+      font-size: 1.1rem;
+   }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+   .card {
+      background-color: var(--background-dark);
+   }
+
+   .header,
+   .footer {
+      border-color: var(--border-color-dark);
+   }
+
+   .footer {
+      background-color: var(--background-alt-dark);
+   }
+
+   .default {
+      border-color: var(--border-color-dark);
+   }
+
+   .bordered {
+      border-color: var(--border-color-dark);
+   }
+}

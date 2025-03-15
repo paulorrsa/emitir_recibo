@@ -1,0 +1,142 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: linear-gradient(135deg, var(--primary-50) 0%, white 100%);
+}
+
+.content {
+  text-align: center;
+  max-width: 500px;
+  padding: var(--space-8);
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.icon {
+  color: var(--primary-500);
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--neutral-900);
+  margin-bottom: var(--space-4);
+}
+
+.message {
+  font-size: 1.125rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-8);
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: var(--primary-500);
+  color: white;
+  box-shadow: 0 2px 4px rgba(24, 181, 168, 0.2);
+}
+
+.button:hover {
+  background-color: var(--primary-600);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(24, 181, 168, 0.3);
+}
+
+.secondaryButton {
+  background-color: var(--neutral-100);
+  color: var(--neutral-700);
+  box-shadow: none;
+}
+
+.secondaryButton:hover {
+  background-color: var(--neutral-200);
+  color: var(--neutral-800);
+  box-shadow: none;
+}
+
+.buttonIcon {
+  font-size: 1.125rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: linear-gradient(
+      135deg,
+      var(--primary-900) 0%,
+      var(--neutral-900) 100%
+    );
+  }
+
+  .content {
+    background-color: var(--neutral-800);
+  }
+
+  .title {
+    color: var(--neutral-50);
+  }
+
+  .message {
+    color: var(--neutral-300);
+  }
+
+  .secondaryButton {
+    background-color: var(--neutral-700);
+    color: var(--neutral-200);
+  }
+
+  .secondaryButton:hover {
+    background-color: var(--neutral-600);
+    color: var(--neutral-100);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 640px) {
+  .container {
+    padding: var(--space-4);
+  }
+
+  .content {
+    padding: var(--space-6);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
