@@ -60,6 +60,7 @@ const GenerateReceipt = () => {
 
   return (
     <div className={styles.page}>
+      
       <Container>
         <div className={styles.grid}>
           <div className={`${styles.formSection} no-print`}>
